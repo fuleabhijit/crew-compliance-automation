@@ -3,8 +3,8 @@ import requests
 import pandas as pd
 from datetime import datetime
 
-API_KEY = "9fd812ae14fd8f852227d0600e3228da"
-
+import os
+API_KEY = os.getenv("AVIATIONSTACK_KEY")
 MAX_DAILY_FLIGHT = 7
 MAX_WEEKLY_FLIGHT = 30
 
